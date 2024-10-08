@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+
+<body>
+    <!-- cutom cursor  -->
+    <!-- <div class="cursor"></div> -->
+    
+    <header>
+        <nav>
+            <div class="logo main_logo not-toggle">Oraman</div>
+
+            <ul class="links_nav">
+                <li><a href="/">accueil</a></li>
+                <li>
+                    <div class="menu_drop-links">
+                        <a class="active-link">Services</a>
+                    <button><i class="ri-arrow-down-s-line"></i></button>
+                    <div class="menu_drop-liks_list">
+                        <a href="./services.html">creation of showcase sites</a>
+                        <a href="./ecommerce.html">creation de sites e-commerces</a>
+                        <a href="#" class="active-link">refonte de sites</a>
+                        <a href="./maintenance.html">maintenance de sites</a>
+                    </div>
+                </li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">nous contacter</a></li>
+
+                <div class="container">
+                    <label class="toggle" for="switch">
+                        <input class="switches input" id="switch" type="checkbox">
+                        <div class="icon icon--moon">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="icon icon--sun">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+            </ul>
+
+            <div class="menu-mob">
+
+                <div class="container-mob">
+                    <label class="toggle" for="switch">
+                        <input class="switches input" id="switch" type="checkbox">
+                        <div class="icon icon--moon">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="icon icon--sun">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="meu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="navlink-mob-cont">
+        <ul>
+            <li><a href="#" class="active-link">accueil</a></li>
+        <li class="menu-item-mob">
+            <div class="menu_drop-links">
+                <a>Services</a>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="menu_drop-liks_list-mob">
+                <a href="/pages/services.html">creation of showcase sites</a>
+                <a href="/pages/ecommerce.html">creation de sites e-commerces</a>
+                <a href="/pages/webredesign.html">refonte de sites</a>
+                <a href="/pages/maintenance.html">maintenance de sites</a>
+            </div>
+        </li>
+        <li><a href="/pages/portfolio.html">portfolio</a></li>
+        <li><a href="/pages/contact.html">nous contacter</a></li>
+        <div class="close-btn-menu">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        </ul>
+
+    </div>
+
+    <header class="fixed_header">
+        <nav>
+            <div class="logo">Oraman</div>
+
+            <ul>
+                <li><a href="/">accueil</a></li>
+                <li>
+                    <div class="menu_drop-links">
+                        <a class="active-link">Services</a>
+                    <button><i class="ri-arrow-down-s-line"></i></button>
+                    <div class="menu_drop-liks_list">
+                        <a href="./services.html">creation of showcase sites</a>
+                        <a href="./ecommerce.html">creation de sites e-commerces</a>
+                        <a href="#" class="active-link">refonte de sites</a>
+                        <a href="./maintenance.html">maintenance de sites</a>
+                    </div>
+                </li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">nous contacter</a></li>
+
+                <div class="container">
+                    <label class="toggle" for="switch">
+                        <input class="switches input" id="switch" type="checkbox">
+                        <div class="icon icon--moon">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="icon icon--sun">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+            </ul>
+
+            <div class="menu-mob">
+
+                <div class="container-mob">
+                    <label class="toggle" for="switch">
+                        <input class="switches input" id="switch" type="checkbox">
+                        <div class="icon icon--moon">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="icon icon--sun">
+                            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="meu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero_section">
+            <div class="top_shadow"></div>
+            <div class="banner_content portfolio_banner">
+                <div>
+                    <!-- <div class="typin_content portfolio_head">Website redesign</div> -->
+                    <div class="typin_content portfolio_head">Refonte de site web</div>
+                <p>Dans un environnement numérique en constante évolution, un site web obsolète peut freiner la croissance de votre entreprise. Chez Oraman, nous, redéfinissons et modernisons les sites web pour qu'ils répondent aux exigences actuelles du marché tout en reflétant fidèlement l’identité de votre marque. Grâce à une approche stratégique alliant design innovant, performance optimisée et expérience utilisateur améliorée, nous transformons votre site existant en un atout digital puissant. Renforcez votre compétitivité et assurez-vous une présence en ligne à la hauteur de vos ambitions.</p>
+                <!-- <p>Request your free audit for the redesign of your website, our teams are at your disposal.</p> -->
+                </div>
+                <div class="port_ban-img">
+                    <img src="../images/redesign.png" alt="">
+                </div>
+            </div>
+        </div>
+
+                <!-- our services -->
+                <!-- <section>
+                    <div class="our_servicess">
+                        <div class="our_img"><img src="../images/redesign2.png" alt="IMG"></div>
+                        <div class="our_content">
+            
+                            <p class="serv_para our_ani">If your site was created by a web agency, we can take it over (or not) after a complete study of it. On the other hand, if your site was created with the following platforms (Wix, 1&1, ionos, hubside or any other general public platforms) or by a freelancer, we will not take it over.</p><br>
+                            <p class="serv_para our_ani">It is important to understand that the time required to master and adapt to sites of this type, as well as sites that we did not create, can sometimes prove more expensive to take over...than to remake a new one.</p><br>
+                            <p class="serv_para our_ani">Redesigning a new site will also be an opportunity to adapt it to new technologies and new SEO rules.</p>
+                            <div class="user_req our_ani">
+                                <div>
+                                    <div class="check_mark"><span><i class="ri-check-line"></i></span></div>
+                                    <p>User Interface design</p>
+                                </div>
+                                <div>
+                                    <div class="check_mark"><span><i class="ri-check-line"></i></span></div>
+                                    <p>User Experience design</p>
+                                </div>
+                                <div>
+                                    <div class="check_mark"><span><i class="ri-check-line"></i></span></div>
+                                    <p>Web Application design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+        <!-- work section  -->
+         <!-- work section  -->
+         <section class="work">
+            <div class="work_section">
+                <h2>Échantillons de nos dernières refonte de site</h2>
+                <div class="work_cont">
+                    <div>
+                        <div class="work_img"><img src="../images/work-1.png" alt=""></div>
+                        <div class="work_btns">
+                            <p>The smarter way to manage liquidity</p>
+                            <a href="#">vue <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="work_img"><img src="../images/work-2.png" alt=""></div>
+                        <div class="work_btns">
+                            <p>The smarter way to manage liquidity</p>
+                            <a href="#">vue <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="work_img"><img src="../images/work-1.png" alt=""></div>
+                        <div class="work_btns">
+                            <p>The smarter way to manage liquidity</p>
+                            <a href="#">vue <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="work_img"><img src="../images/work-2.png" alt=""></div>
+                        <div class="work_btns">
+                            <p>The smarter way to manage liquidity</p>
+                            <a href="#">vue <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+ <!-- choose services  -->
+ <section id="choose_serve">
+    <div class="choose_ser">
+        <h2 class="choose_ser-heading">Car choisir Oraman, c’est ... <img src="../images/3D_2.png" alt="IMG"></h2>
+        <!-- <p class="choose_ser-para">Know why we are best website development company</p> -->
+
+        <div class="choose_cont">
+            <div>
+                <i class="fa-solid fa-users"></i>
+                <h3>Une equipe d'expert</h3>
+                <p>Notre équipe est composée de professionnels expérimentés. Nous apportons innovation et expertise technique à chaque projet.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-check"></i>
+                <h3>Des solutions personalisée</h3>
+                <p>Nous nous efforçons d'être flexible et d'établir des sites sur-mesures qui correspondent à nos clients.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Des sites responsives</h3>
+                <p>Nous établissons des sites qui s'adaptent à toutes les plateformes. (téléphones, tablette, ordinateur...)</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Une obtimisation SEO</h3>
+                <p>Nous développons des sites web optimisés pour le SEO, afin d'améliorer votre visibilité en ligne et d'attirer plus de visiteurs.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gem"></i>
+                <h3>Des sites sécurisé</h3>
+                <p>Nous sommes spécialisés dans le développement de plateformes de commerce électronique robustes qui facilitent les transactions en ligne et améliorent la satisfaction des clients.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-button"></i>
+                <h3>Des sites peu cheres</h3>
+                <p>Chez Oraman, nous savons que 4 000$ pour créer son site, c’est énorme, c’est pourquoi nos sites les plus basiques commencent à 200 $.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="client_parcent">
+        <div class="client_cont">
+            <div>
+                <h2>3M+</h2>
+                <p>Customar</p>
+            </div>
+            <div>
+                <h2>45M+</h2>
+                <p>Coverage</p>
+            </div>
+            <div>
+                <h2>22%</h2>
+                <p>Earning</p>
+            </div>
+            <div>
+                <h2>8.03%</h2>
+                <p>Interest</p>
+            </div>
+        </div>
+    </div> -->
+</section>
+
+        <!-- review section  -->
+        <!-- <section id="review_section">
+            <div class="review_cont">
+                <h2 class="review_cont-head">Our happy Customers</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/review-man1.jpg" alt="IMG">
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="review-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+                                beatae pariatur nobis porro commodi voluptatem.</p>
+                            <p class="review_name">mac jubin</p>
+                            <p class="comp_name">Founder of Rubik</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review-man1.jpg" alt="IMG">
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="review-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+                                beatae pariatur nobis porro commodi voluptatem.</p>
+                            <p class="review_name">mac jubin</p>
+                            <p class="comp_name">Founder of Rubik</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review-man1.jpg" alt="IMG">
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="review-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+                                beatae pariatur nobis porro commodi voluptatem.</p>
+                            <p class="review_name">mac jubin</p>
+                            <p class="comp_name">Founder of Rubik</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review-man1.jpg" alt="IMG">
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="review-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+                                beatae pariatur nobis porro commodi voluptatem.</p>
+                            <p class="review_name">mac jubin</p>
+                            <p class="comp_name">Founder of Rubik</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review-man1.jpg" alt="IMG">
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="review-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+                                beatae pariatur nobis porro commodi voluptatem.</p>
+                            <p class="review_name">mac jubin</p>
+                            <p class="comp_name">Founder of Rubik</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <footer>
+            <div class="footer_cont">
+                <div class="groth_links footer_gsap">
+                    <div class="footer_logo">Oraman</div>
+                    <p>Your Growth Partner</p>
+                    <ul class="social_links">
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    </ul>
+                </div>
+                <div class="offer_links footer_gsap">
+                    <h3>services</h3>
+                    <a href="./services.html">développement de site vitrine</a>
+                    <a href="./ecommerce.html">développement de site e-commerce</a>
+                    <a href="#">refonte de site web</a>
+                    <a href="./maintenance.html">maintenance de site web</a>
+                </div>
+
+
+
+                <div class="offer_links footer_gsap">
+                    <h3>A propos de Oraman</h3>
+                    <p><i class="ri-mail-open-line"></i> <span>Oramannet@gmail.com</span></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- scroll rotate  -->
+    <div class="rotate_circle">
+        <svg width="70" height="70" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6119 25.5016L62.8527 8.83977L99.4027 38.8225L91.7119 85.4671L47.4711 102.129L10.9211 72.1462L18.6119 25.5016Z" stroke="#131310"></path><path d="M85.1439 18.9342L101.806 63.175L71.823 99.725L25.1784 92.0341L8.51658 47.7933L38.4993 11.2434L85.1439 18.9342Z" stroke="#131310"></path></svg>
+        <p class="not-rot">Scroll</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 25,
+                },
+                1024: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+    </script> -->
+    <script src="../main.js"></script>
+</body>
+
+</html>
